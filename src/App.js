@@ -7,20 +7,28 @@ import Testimonials from  './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
-class App extends Component {
-  render() {
+import SignInScreen  from './components/SignInScreen';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+
+function App(){
+ 
     return (
-      <div className="App">
+
+      ReactDOM.render(
+        <Router>
         <Header resumeData={resumeData}/>
-        <About resumeData={resumeData}/>
-        <Resume resumeData={resumeData}/>
-        <Portfolio resumeData={resumeData}/>
-        <Testimonials resumeData={resumeData}/>
-        <ContactUs resumeData={resumeData}/>
-        <Footer resumeData={resumeData}/>
-      </div>
+        <Routes>
+          <Route path="/" element={<About resumeData={resumeData}/>}>
+          <Route path="/SignInScreen" element={<SignInScreen />} />
+          </Route>
+        </Routes>
+        <SignInScreen></SignInScreen>
+        <Footer resumeData ={resumeData}/>
+        </Router>,
+        document.getElementById('root')
+      )
     );
   }
-}
 
 export default App;

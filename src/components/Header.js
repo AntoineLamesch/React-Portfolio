@@ -1,7 +1,57 @@
 import React, { Component } from 'react';
+import * as firebaseui from 'firebaseui';
+import 'firebaseui/dist/firebaseui.css';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase.js';
+import { getStorage, ref, getDownloadURL} from "firebase/storage";
+
+const storage = getStorage();
+
+// Points to the root reference
+const storageRef = ref(storage);
+
+// Points to 'images'
+const imagesRef = ref(storageRef, 'pdf');
+
+// Points to 'images/space.jpg'
+// Note that you can use variables to create child values
+const fileName = 'Lamesch_cv.pdf';
+const spaceRef = ref(storage, 'gs://bucket/Lamesch_cv.pdf');
+
+const download = getDownloadURL(spaceRef)
+.then((url) => {
+  // Insert url into an <img> tag to "download"
+})
+.catch((error) => {
+  // A full list of error codes is available at
+  // https://firebase.google.com/docs/storage/web/handle-errors
+  switch (error.code) {
+    case 'storage/object-not-found':
+      // File doesn't exist
+      break;
+    case 'storage/unauthorized':
+      // User doesn't have permission to access the object
+      break;
+    case 'storage/canceled':
+      // User canceled the upload
+      break;
+
+    // ...
+
+    case 'storage/unknown':
+      // Unknown error occurred, inspect the server response
+      break;
+  }
+});
+
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
+    const userEmail = auth.currentUser ? auth.currentUser.email : null;
+    console.log(userEmail)
+    
     return (
       <React.Fragment>
       
@@ -14,8 +64,9 @@ export default class Header extends Component {
                <li><a className="smoothscroll" href="#about">About</a></li>
              <li><a className="smoothscroll" href="#resume">Resume</a></li>
                <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-               <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-               <li><a className="smoothscroll" href="#contact">Contact</a></li>
+               <li><a className="smoothscroll" href="SignInScreen">Connexion</a></li>
+               <li><button onClick={download.url}>Telecharger mon CV</button></li>
+               <li><a onClick={() => firebase.auth().signOut()}>Sign-out</a></li>
             </ul>
          </nav>
 

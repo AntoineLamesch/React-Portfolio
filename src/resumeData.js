@@ -1,95 +1,80 @@
 let resumeData = {
     "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
-    "role": "Frontend Developer and Data Scientist",
+    "name": "Antoine Lamesch",
+    "role": "Web Devlopper",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "I like watch and also watch football. I also like the new technologies",
     "socialLinks":[
         {
           "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+          "url":"https://www.linkedin.com/in/antoine-lamesch-7b4626205/",
           "className":"fa fa-linkedin"
         },
         {
           "name":"github",
-          "url":"http://github.com/rbhatia46",
+          "url":"https://github.com/AntoineLamesch",
           "className":"fa fa-github"
         },
-        {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
-          "className":"fa fa-twitter"
-        }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
+    "aboutme":"I am currently a Bachelor's Degree student at Calais IUT. I am a self taught Full Stack Web Developer, I love the PHP environment.",
+    "address":"Hauts de France, France",
+    "website":"https://antoine-lamesch.fr",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
+        "UniversityName":"IUT Calais",
+        "specialization":"Web AND Mobile devlopment",
+        "MonthOfPassing":"Sept 2022",
+        "YearOfPassing":"Jul 2023",
+        "Achievements":"Symfony, React, React Native"
       },
       {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
+        "UniversityName":"IUT Calais",
+        "specialization":"Computer sciences",
+        "MonthOfPassing":"Sept 2019",
+        "YearOfPassing":"Jul 2022",
+        "Achievements":"Basics of programming,algorithm, database"
       }
     ],
     "work":[
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "CompanyName":"ESSM Le Portel Côte d'Opale",
+        "specialization":"Web Development (internship)",
+        "MonthOfLeaving":"Apr 2022",
+        "YearOfLeaving":"Jul 2022",
+        "Achievements":"Development of an web app with php"
       },
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
     ],
-    "skillsDescription":"Your skills here",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"PHP"
       },
       {
-        "skillname":"CSS"
+        "skillname":"SYMFONY"
       },
       {
         "skillname":"Reactjs"
+      },
+      {
+        "skillname":"ReactNative"
       }
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "name":"ESSM WebApp",
+        "description":"WebApp",
+        "imgurl":"images/portfolio/essm.png"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
+        "name":"Tltt WebSite",
+        "description":"WebSite",
+        "imgurl":"images/portfolio/tltt.jpg"
       },
       {
         "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
+        "description":"Plant Wiki",  
+        "imgurl":"images/portfolio/demo_app.gif"
       },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      }
     ],
     "testimonials":[
       {

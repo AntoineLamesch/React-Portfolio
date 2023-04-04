@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import firebase from 'firebase/compat/app';
+import * as firebaseui from 'firebaseui'
+import 'firebaseui/dist/firebaseui.css'
+
+
 export default class About extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -8,7 +13,7 @@ export default class About extends Component {
 
             <div className="three columns">
 
-               <img className="profile-pic"  src="images/profilepic.jpg" alt="" />
+               <img className="profile-pic"  src="images/profilepic.png" alt="" />
 
             </div>
 

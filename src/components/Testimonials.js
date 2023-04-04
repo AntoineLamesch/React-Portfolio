@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import * as firebaseui from 'firebaseui'
+import 'firebaseui/dist/firebaseui.css'
+import { useNavigate } from 'react-router-dom';
 export default class Testimonials extends Component {
   render() {
     let resumeData = this.props.resumeData;
+
+    const navigate = useNavigate();
+
+    const goToConnect = () => {
+      navigate('/SignInscreen'); // rediriger vers la page d'accueil
+    };
+  
     return (
       <section id="testimonials">
         <div className="text-container">

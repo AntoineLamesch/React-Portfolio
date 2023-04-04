@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #15004a; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -117,7 +117,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #15004a; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #333D61; }
 
 
 /* ------------------------------------------------------------------ */
@@ -187,18 +187,18 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: #f9faff;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #15004a; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #15004a;
    margin-bottom: 12px;
 }
 #about p {
@@ -207,8 +207,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 400px;
+   height: 200px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -242,7 +242,7 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #15004a; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -251,7 +251,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #15004a;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -318,7 +318,7 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #15004a;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
@@ -788,14 +788,14 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background:#15004a;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   color: white;
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #11ABB0; }
+#contact a, #contact a:visited  { color: #15004a; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -856,7 +856,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #15004a;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -875,7 +875,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #15004a;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -887,7 +887,7 @@ call-to-action .button {
    margin-left: 26%;
 }
 #message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-success { color: #15004a; }
 
 #message-warning i,
 #message-success i {
@@ -971,7 +971,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #333D61;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
@@ -989,7 +989,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	background-color: white;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -997,10 +997,13 @@ footer .social-links li:first-child { margin-left: 0; }
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   color: #15004a;
    font-size: 21px;
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { 
+   background-color: #15004a;
+   color: white;
+}
 

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import * as firebaseui from 'firebaseui'
+import 'firebaseui/dist/firebaseui.css'
 export default class Footer extends Component {
   render() {
     let resumeData = this.props.resumeData;
